@@ -1,0 +1,27 @@
+{
+    "id1": {
+        "naziv": "cv",
+        "href": "cv.html",
+        "dugmeNaziv": "CV"
+    },
+    "id2": {
+        "naziv": "smd",
+        "href1": "xml/sitemap.xml",
+        "href1Tekst": "Mapa sajta",
+        "href2": "pdf/pr_wp_145_14.pdf",
+        "href2Tekst": "Dokumentacija"
+    },
+    "id3": {
+        "naziv": "prava",
+        "tekst": "&copy;2018 &nbsp;Jovan Ranković"
+    },
+    "id4": {
+        "naziv": "linkovi",
+        "href1": "https://www.linkedin.com/in/jovan-rankovic/",
+        "href1ImgSrc": "slike/linkedin.png",
+        "href1ImgTekst": "LinkedIn",
+        "href2": "https://github.com/jovan-rankovic",
+        "href2ImgSrc": "slike/github.png",
+        "href2ImgTekst": "GitHub"
+    }
+}

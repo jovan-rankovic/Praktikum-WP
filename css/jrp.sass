@@ -1,0 +1,520 @@
+*
+  margin: 0px auto
+  padding: 0px auto
+
+$ljubicasta: #737398
+$siva: #c3c3cf
+$crna: #242424
+$bela: #fff
+$radius: 8px
+
+=velicina($w,$h)
+    width: $w
+    min-height: $h
+  
+body
+  font-family: Calibri, sans-serif
+  background-color: $siva
+
+h1
+  text-transform: uppercase
+  color: $ljubicasta
+
+h2
+  color: $ljubicasta
+
+img
+  border-radius: $radius
+
+header
+  +velicina(100%, 70px)
+  img
+    margin-left: auto
+    margin-right: auto
+    display: block
+
+hr
+  color: $bela
+
+#forma p
+  display: none
+
+#autor img
+  cursor: none
+
+#map
+  border-radius: $radius
+
+@media screen and (max-width: 623px)
+  header
+    height: auto
+    img
+      width: 80%
+
+.navigacija
+  background-color: $ljubicasta
+  overflow: hidden
+  text-align: center
+  a
+    display: inline-block
+    color: $bela
+    padding: 14px 16px
+    text-decoration: none
+    font-size: 25px
+    &:hover
+      background-color: $siva
+      color: $crna
+  .ikonica
+    display: none
+
+#navigacijaDesktop
+  display: block
+
+#navigacijaResponsive
+  display: none
+
+@media screen and (max-width: 767px)
+  .navigacija a
+    float: left
+    &:not(:first-child)
+      display: none
+    &.ikonica
+      float: right
+      display: block
+      color: $bela
+  #navigacijaDesktop
+    display: none
+  #navigacijaResponsive
+    display: block
+
+@media screen and (max-width: 767px)
+  .navigacija.responsive
+    position: relative
+    a
+      &.ikonica
+        position: absolute
+        right: 0
+        top: 0
+        color: $bela
+      float: none
+      display: block
+      text-align: left
+  #navigacijaDesktop
+    display: none
+  #navigacijaResponsive
+    display: block
+
+#leva p, #desna p
+  color: #656060
+
+@media screen and (min-width: 1000px)
+  hr
+    width: 80%
+    margin-left: 10%
+    margin-top: 30px
+  #sadrzaj
+    +velicina(80%, 450px)
+  #naslov
+    +velicina(100%, 100px)
+    text-align: center
+    padding-top: 50px
+    font-size: 20px
+    color: $ljubicasta
+  #slike
+    +velicina(100%, 450px)
+    color: $ljubicasta
+    padding: 5%
+  #leva
+    +velicina(50%, 500px)
+    text-align: center
+    float: left
+    a
+      text-decoration: none
+      color: #000
+      &:hover
+        text-decoration: underline
+    h2
+      padding: 20px
+    p
+      padding-left: 15%
+      padding-right: 15%
+    img
+      width: 70%
+      height: 30%
+  #desna
+    +velicina(50%, 50px)
+    text-align: center
+    float: right
+    img
+      width: 70%
+      height: 30%
+    a
+      text-decoration: none
+      color: #000
+      &:hover
+        text-decoration: underline
+    h2
+      padding: 20px
+    p
+      padding-left: 15%
+      padding-right: 15%
+
+@media screen and (max-width: 999px) and (min-width: 768px)
+  #sadrzaj
+    +velicina(100%, 450px)
+  hr
+    width: 80%
+    color: $ljubicasta
+    margin-left: 10%
+    margin-top: 30px
+  #naslov
+    +velicina(100%, 100px)
+    text-align: center
+    padding-top: 50px
+    font-size: 20px
+    color: $ljubicasta
+  #slike
+    +velicina(80%, 450px)
+    color: $ljubicasta
+    padding: 10%
+  #leva
+    +velicina(50%, 500px)
+    text-align: center
+    float: left
+    a
+      text-decoration: none
+      color: #000
+      &:hover
+        text-decoration: underline
+    h2
+      padding: 20px
+    p
+      padding-left: 15%
+      padding-right: 15%
+    img
+      width: 70%
+      height: 200px
+  #desna
+    +velicina(50%, 500px)
+    text-align: center
+    float: right
+    img
+      width: 70%
+      height: 200px
+    a
+      text-decoration: none
+      color: #000
+      &:hover
+        text-decoration: underline
+    h2
+      padding: 20px
+    p
+      padding-left: 15%
+      padding-right: 15%
+
+@media screen and (max-width: 767px) and (min-width: 401px)
+  #sadrzaj
+    +velicina(100%, 500px)
+  hr
+    width: 90%
+    color: $ljubicasta
+    margin-left: 5%
+    margin-top: 30px
+  #naslov
+    +velicina(100%, 100px)
+    text-align: center
+    padding-top: 50px
+  #slike
+    +velicina(100%, 700px)
+    text-align: center
+    p
+      margin-left: 10%
+      margin-right: 10%
+      margin-top: 15px
+  #leva
+    +velicina(100%, 250px)
+    a
+      text-decoration: none
+      color: #000
+      &:hover
+        text-decoration: underline
+    h2
+      padding: 20px
+    img
+      width: 60%
+      height: 30%
+  #desna
+    +velicina(100%, 250px)
+    margin-top: 50px
+    img
+      width: 60%
+      height: 30%
+    a
+      text-decoration: none
+      color: #000
+      &:hover
+        text-decoration: underline
+    h2
+      padding: 20px
+    p
+      padding-left: 10%
+      padding-right: 10%
+      padding-bottom: 20px
+
+@media screen and (max-width: 400px)
+  #sadrzaj
+    +velicina(100%, 800px)
+  hr
+    width: 90%
+    color: $ljubicasta
+    margin-left: 5%
+    margin-top: 30px
+  #naslov
+    +velicina(100%, 100px)
+    padding-top: 50px
+    text-align: center
+  #slike
+    +velicina(100%, 700px)
+    text-align: center
+    p
+      margin-left: 5%
+      margin-right: 5%
+      margin-top: 15px
+  #leva
+    +velicina(100%, 250px)
+    a
+      text-decoration: none
+      color: #000
+      &:hover
+        text-decoration: underline
+    h2
+      padding: 20px
+    img
+      width: 90%
+      height: 30%
+  #desna
+    +velicina(100%, 250px)
+    margin-top: 50px
+    img
+      width: 90%
+      height: 30%
+    a
+      text-decoration: none
+      color: #000
+      &:hover
+        text-decoration: underline
+    h2
+      padding: 20px
+    p
+      padding-left: 5%
+      padding-right: 5%
+      padding-bottom: 20px
+
+#autor
+  width: 60%
+  color: $crna
+  p
+    padding: 50px
+    font-size: 25px
+    text-align: center
+    letter-spacing: 2px
+
+@media screen and (max-width: 400px)
+  autor
+    width: 90%
+  #autor p
+    padding-left: 10px !important
+    padding-right: 10px !important
+    padding-top: 50px !important
+    padding-bottom: 50px !important
+
+@media screen and (min-width: 648px) and (max-width: 1500px)
+  #autor
+    width: 80%
+    p
+      padding-left: 10px
+      padding-right: 10px
+      padding-top: 50px
+      padding-bottom: 50px
+
+@media screen and (min-width: 400px) and (max-width: 647px)
+  #autor
+    width: 90%
+    p
+      font-size: 20px
+      padding-left: 0px
+      padding-right: 0px
+      padding-top: 50px
+      padding-bottom: 50px
+    img
+      width: 80%
+      height: 35%
+
+@media screen and (min-width: 400px) and (max-width: 647px) and (orientation: landscape)
+  #autor img
+    width: 40%
+    height: 35%
+
+@media screen and (max-width: 399px)
+  #autor
+    width: 100%
+    img
+      width: 95%
+      height: 30%
+    p
+      padding-top: 15px
+      font-size: 15px
+
+@media screen and (max-width: 399px) and (orientation: landscape)
+  #autor img
+    width: 40%
+    height: 35%
+
+#map
+  +velicina(60%, 350px)
+  margin-top: 50px
+
+#forma
+  +velicina(100%, 300px)
+  padding-top: 50px
+  padding-bottom: 150px
+  text-align: center
+  h2
+    font-size: 25px
+    margin: 10px
+
+.tb
+  width: 50%
+  height: 40px
+  margin: 10px
+  border-radius: $radius
+  border-color: $ljubicasta
+  border-style: solid
+  color: $crna
+  font-size: 20px
+
+#poruka
+  max-width: 50%
+  width: 50%
+  height: 140px
+  margin: 10px
+  border-radius: $radius
+  border-color: $ljubicasta
+  border-style: solid
+  border-width: 2px
+  color: $crna
+  font-size: 20px
+
+#posalji
+  width: 15%
+  height: 40px
+  float: right
+  margin-right: 25%
+  margin-top: 10px
+  background-color: $ljubicasta
+  color: $bela
+  font-size: 20px
+  border-radius: $radius
+  &:hover
+    background-color: $bela
+    color: #737378
+    cursor: pointer
+
+@media screen and (min-width: 648px) and (max-width: 1400px)
+  #posalji
+    width: 20%
+    margin-right: 15%
+  #map
+    +velicina(70%, 200px)
+  #forma
+    width: 100%
+  .tb
+    width: 70%
+  #poruka
+    max-width: 70%
+    width: 70%
+
+@media screen and (max-width: 647px)
+  #posalji
+    width: 95%
+    margin-right: 2.5%
+    margin-top: 10px
+    margin-bottom: 50px
+  #map
+    +velicina(95%, 200px)
+  #forma
+    width: 100%
+  .tb
+    width: 95%
+  #poruka
+    max-width: 95%
+    width: 95%
+
+footer
+  +velicina(100%, 400px)
+
+#cv
+  padding-top: 25px
+  height: 100px
+  background-color: $ljubicasta
+  text-align: center
+
+#
+  height: 60px
+  padding-top: 25px
+  background-color: $ljubicasta
+  color: $bela
+  font-size: 20px
+  text-align: center
+  a
+    color: $bela
+    text-decoration: none
+    &:hover
+      color: $crna
+
+#prava
+  height: 100px
+  background-color: $ljubicasta
+  color: $bela
+  font-size: 20px
+  text-align: center
+  strong
+    cursor: none
+
+#linkovi
+  height: 100px
+  background-color: $ljubicasta
+  color: $bela
+  text-align: center
+  padding: 0px !important
+  ul
+    list-style: none
+  li
+    display: inline-block
+  img
+    width: 60px
+    height: 60px
+    margin-left: 20px
+    margin-right: 20px
+
+button
+  border-radius: $radius
+  border-color: $bela
+  border-style: outset
+  min-width: 100px
+  height: 75px
+  padding: 10px
+  color: $bela
+  background-color: $ljubicasta
+  cursor: pointer
+  font-size: 2em
+  &:hover
+    background-color: $bela
+    color: $ljubicasta
+
+@media screen and (max-width: 350px)
+  #smd, #prava
+    font-size: 16px
+  #linkovi img
+    width: 50px
+    height: 50px
